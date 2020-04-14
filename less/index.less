@@ -61,6 +61,9 @@ html, body {
 @primary-color: #0077ff;
 @secondary-color: #d2f2ff;
 @header-font: ~"1.3rem 'Baloo Paaji 2'";
+@footer-background: #eaeaea;
+
+@card-padding: 1.5rem;
 
 .flex(@direction: row; @justify: flex-start; @align: stretch){
 	display: flex;
@@ -92,7 +95,7 @@ html, body {
 		li{
 			.flex(column, @align: center);
 			color: rgb(231, 175, 71);
-			
+
 			a{
 				color: rgb(231, 175, 71);
 				padding: 1rem;
@@ -106,5 +109,18 @@ html, body {
 
 /* Primary Styles */
 .site-wrapper{
+	width: 100%;
+}
+
+/* Content Styles */
+.card{
+	padding: @card-padding;
+
+	
+}
+
+/* Footer Styles */
+.site-footer{
+	background-color: @footer-background;
 	width: 100%;
 }

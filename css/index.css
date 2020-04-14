@@ -176,3 +176,12 @@ body {
 .site-wrapper {
   width: 100%;
 }
+/* Content Styles */
+.card {
+  padding: 1.5rem;
+}
+/* Footer Styles */
+.site-footer {
+  background-color: #eaeaea;
+  width: 100%;
+}
