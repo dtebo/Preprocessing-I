@@ -185,6 +185,25 @@ body {
 .card li {
   padding: 1.4rem;
 }
+.card table {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+.card table thead {
+  display: block;
+  background: darkslategray;
+  color: #fff;
+  padding: 10px;
+}
+.card table thead tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
 /* Footer Styles */
 .site-footer {
   display: flex;

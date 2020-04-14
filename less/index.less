@@ -119,9 +119,28 @@ html, body {
 	padding: @card-padding;
 	background: @card-background;
 	margin: @card-margin;
-	
+
 	li{
 		padding: 1.4rem;
+	}
+
+	table{
+		thead{
+			display: block;
+			background: darkslategray;
+			color: #fff;
+			padding: 10px;
+			
+			tr{
+				.flex(row, space-between);
+				width: 100%;
+			}
+		}
+
+		background-color: #fff;
+		border-radius: 5px;
+		margin-top: 20px;
+		width: 100%;
 	}
 }
 
