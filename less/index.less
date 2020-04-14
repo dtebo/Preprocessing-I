@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,3 +57,50 @@ html, body {
     height: 100%;
 }
 
+@nav-background: ~"linear-gradient(175deg, gray 0%, lightgray 100%)";
+@primary-color: #0077ff;
+@secondary-color: #d2f2ff;
+@header-font: ~"1.3rem 'Baloo Paaji 2'";
+
+.flex(@direction: row; @justify: flex-start; @align: stretch){
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+/* Header Styles */
+.site-header{
+	.flex(column);
+	font: @header-font;
+	margin-top: 20px;
+	
+	h1{
+		font-size: 1.8rem;
+	}
+
+	.profile-info{
+		.flex(@justify: center);
+		line-height: 1.4rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.site-nav{
+		.flex(column, @align: center);
+		height: 2rem;
+
+		a{
+			color: rgb(231, 175, 71);
+			padding: 1rem;
+			text-align: center;
+			text-decoration: none;
+			width: 100%
+		}
+	}
+}
+
+/* Primary Styles */
+.site-wrapper{
+	width: 100%;
+}
