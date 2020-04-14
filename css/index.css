@@ -181,28 +181,38 @@ body {
   padding: 1.5rem;
   background: #fbf7f7;
   margin: 1rem;
+  font: 1rem 'PT Sans';
+}
+.card h2 {
+  font-weight: bold;
 }
 .card li {
   padding: 1.4rem;
 }
 .card table {
-  background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
   margin-top: 20px;
   width: 100%;
 }
 .card table thead {
-  display: block;
   background: darkslategray;
   color: #fff;
-  padding: 10px;
 }
 .card table thead tr {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
+  text-align: left;
+}
+.card table thead tr th {
+  padding: 10px;
+}
+.card table tbody tr:nth-child(even) {
+  background: #ececec;
+}
+.card table tbody tr:hover {
+  background: #c8c8c8;
+}
+.card table tbody tr td {
+  padding: 10px;
 }
 /* Footer Styles */
 .site-footer {

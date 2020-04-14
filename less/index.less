@@ -63,9 +63,13 @@ html, body {
 @header-font: ~"1.3rem 'Baloo Paaji 2'";
 @footer-background: #eaeaea;
 
+@card-font: ~"1rem 'PT Sans'";
 @card-padding: 1.5rem;
 @card-margin: 1rem;
 @card-background: #fbf7f7;
+
+@table-background: #ffffff;
+@table-header-background: darkslategray;
 
 .flex(@direction: row; @justify: flex-start; @align: stretch){
 	display: flex;
@@ -119,6 +123,11 @@ html, body {
 	padding: @card-padding;
 	background: @card-background;
 	margin: @card-margin;
+	font: @card-font;
+	
+	h2{
+		font-weight: bold;
+	}
 
 	li{
 		padding: 1.4rem;
@@ -126,19 +135,36 @@ html, body {
 
 	table{
 		thead{
-			display: block;
-			background: darkslategray;
+			background: @table-header-background;
 			color: #fff;
-			padding: 10px;
 			
 			tr{
-				.flex(row, space-between);
-				width: 100%;
+				th{
+					padding: 10px;
+				}
+				
+				text-align: left;
 			}
 		}
 
-		background-color: #fff;
-		border-radius: 5px;
+		tbody{
+			tr{
+				&:nth-child(even){
+					background: rgb(236, 236, 236);
+				}
+	
+				&:hover{
+					background: rgb(200,200,200);
+				}
+	
+				td{
+					padding: 10px;
+				}
+			}
+		}
+
+		border-radius: 10px;
+		background-color: @table-background;
 		margin-top: 20px;
 		width: 100%;
 	}
