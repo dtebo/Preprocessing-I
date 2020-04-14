@@ -156,13 +156,16 @@ body {
   text-align: center;
 }
 .site-header .site-nav {
+  height: 23rem;
+}
+.site-header .site-nav li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 2rem;
+  color: #e7af47;
 }
-.site-header .site-nav a {
+.site-header .site-nav li a {
   color: #e7af47;
   padding: 1rem;
   text-align: center;
