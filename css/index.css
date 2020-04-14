@@ -190,42 +190,58 @@ body {
 .card li {
   padding: 1.4rem;
 }
-.card table {
+/* Skills Styles */
+#skills table {
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 20px;
   width: 100%;
 }
-.card table thead {
+#skills table thead {
   background: darkslategray;
   color: #fff;
 }
-.card table thead tr {
+#skills table thead tr {
   text-align: left;
 }
-.card table thead tr th {
+#skills table thead tr th {
   padding: 10px;
 }
-.card table tbody tr:nth-child(even) {
+#skills table tbody tr:nth-child(even) {
   background: #ececec;
 }
-.card table tbody tr:hover {
+#skills table tbody tr:hover {
   background: #c8c8c8;
 }
-.card table tbody tr td {
+#skills table tbody tr td {
   padding: 10px;
 }
-.card .experience-item h3 {
+/* Experience Styles */
+#experience .experience-item h3 {
   font-weight: bold;
 }
-.card .experience-item .role-info {
+#experience .experience-item .role-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
 }
-.card .experience-item ul {
+#experience .experience-item ul {
   margin-bottom: 20px;
+}
+/* Education Styles */
+#education .school-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#education .school-info h3 {
+  font-weight: bold;
+}
+/* Achievement Styles */
+#achievements {
+  /* TODO: Add styles */
 }
 /* Footer Styles */
 .site-footer {
