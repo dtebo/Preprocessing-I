@@ -64,6 +64,8 @@ html, body {
 @footer-background: #eaeaea;
 
 @card-padding: 1.5rem;
+@card-margin: 1rem;
+@card-background: #fbf7f7;
 
 .flex(@direction: row; @justify: flex-start; @align: stretch){
 	display: flex;
@@ -115,12 +117,18 @@ html, body {
 /* Content Styles */
 .card{
 	padding: @card-padding;
-
+	background: @card-background;
+	margin: @card-margin;
 	
+	li{
+		padding: 1.4rem;
+	}
 }
 
 /* Footer Styles */
 .site-footer{
+	.flex(@justify: space-evenly);
 	background-color: @footer-background;
+	padding: 2rem;
 	width: 100%;
 }
