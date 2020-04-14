@@ -185,6 +185,7 @@ body {
 }
 .card h2 {
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 .card li {
   padding: 1.4rem;
@@ -213,6 +214,18 @@ body {
 }
 .card table tbody tr td {
   padding: 10px;
+}
+.card .experience-item h3 {
+  font-weight: bold;
+}
+.card .experience-item .role-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.card .experience-item ul {
+  margin-bottom: 20px;
 }
 /* Footer Styles */
 .site-footer {
