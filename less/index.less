@@ -71,6 +71,8 @@ html, body {
 @table-background: #ffffff;
 @table-header-background: darkslategray;
 
+@back-to-top-font: ~"1.5rem 'PT Sans'";
+
 .flex(@direction: row; @justify: flex-start; @align: stretch){
 	display: flex;
 	flex-direction: @direction;
@@ -269,5 +271,25 @@ html, body {
 
 	@media screen and (min-width: 800px){
 		.flex(row, space-between);
+	}
+}
+
+/* Back to top Styles */
+.back-to-top{
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background-color: rgba(255, 166, 0, 0.637);
+	color: white;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+
+	&:before{
+		content: ' ^ ';
+		position: relative;
+		top: 15%;
+		left: 30%;
+		font: @back-to-top-font;
 	}
 }

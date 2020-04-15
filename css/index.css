@@ -319,3 +319,21 @@ body {
     align-items: stretch;
   }
 }
+/* Back to top Styles */
+.back-to-top {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 166, 0, 0.637);
+  color: white;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+.back-to-top:before {
+  content: ' ^ ';
+  position: relative;
+  top: 15%;
+  left: 30%;
+  font: 1.5rem 'PT Sans';
+}
