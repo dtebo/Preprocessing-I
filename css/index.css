@@ -156,21 +156,37 @@ body {
   text-align: center;
 }
 .site-header .site-nav {
-  height: 23rem;
+  height: auto;
 }
-.site-header .site-nav li {
+.site-header .site-nav a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  color: #e7af47;
-}
-.site-header .site-nav li a {
+  align-items: stretch;
+  background: #efefef;
   color: #e7af47;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  width: 100%;
+}
+.site-header .site-nav a:hover {
+  background-color: #f6ece4;
+}
+@media screen and (min-width: 500px) {
+  .site-header .site-nav a {
+    background: none;
+  }
+  .site-header .site-nav a:hover {
+    background-color: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .site-header .site-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
 }
 /* Primary Styles */
 .site-wrapper {
