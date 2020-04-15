@@ -167,6 +167,7 @@ body {
   .site-header .profile-info {
     font-size: 1rem;
     text-align: left;
+    margin-top: 1rem;
   }
 }
 .site-header .site-nav {

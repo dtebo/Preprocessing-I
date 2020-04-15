@@ -240,6 +240,17 @@
 
     <div class="back-to-top"></div>
   </div>
+  <script>
+    let backToTop = document.querySelector('.back-to-top');
+
+    backToTop.onclick = () => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    };
+  </script>
   <script src="https://kit.fontawesome.com/28c53d87fc.js" crossorigin="anonymous"></script>
 </body>
 </html>
