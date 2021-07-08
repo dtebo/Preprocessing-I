@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Header Styles */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  font: 1.3rem 'Baloo Paaji 2';
+  margin-top: 20px;
+}
+.site-header h1 {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 800px) {
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+}
+.site-header a {
+  text-decoration: none;
+}
+.site-header .profile-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .site-header .profile-info {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+.site-header .site-nav {
+  height: auto;
+}
+.site-header .site-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #efefef;
+  color: #e7af47;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.site-header .site-nav a:hover {
+  background-color: #f6ece4;
+}
+@media screen and (min-width: 500px) {
+  .site-header .site-nav a {
+    background: none;
+  }
+  .site-header .site-nav a:hover {
+    background: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .site-header .site-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+}
+@media screen and (min-width: 800px) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 1rem 1rem;
+  }
+}
+/* Primary Styles */
+.site-wrapper {
+  width: 100%;
+}
+/* Content Styles */
+.card {
+  padding: 1.5rem;
+  background: #fbf7f7;
+  margin: 1rem;
+  font: 1rem 'PT Sans';
+}
+.card h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card li {
+  padding: 1.4rem;
+}
+/* Skills Styles */
+#skills table {
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  width: 100%;
+}
+#skills table thead {
+  background: darkslategray;
+  color: #fff;
+}
+#skills table thead tr {
+  text-align: left;
+}
+#skills table thead tr th {
+  padding: 10px;
+}
+#skills table tbody tr:nth-child(even) {
+  background: #ececec;
+}
+#skills table tbody tr:hover {
+  background: #c8c8c8;
+}
+#skills table tbody tr td {
+  padding: 10px;
+}
+/* Experience Styles */
+#experience .experience-item h3 {
+  font-weight: bold;
+}
+#experience .experience-item .role-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#experience .experience-item ul {
+  margin-bottom: 20px;
+}
+/* Education Styles */
+#education .school-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#education .school-info h3 {
+  font-weight: bold;
+}
+/* Achievement Styles */
+#achievements {
+  /* TODO: Add styles */
+}
+/* Footer Styles */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 2rem;
+  width: 100%;
+}
+.site-footer .social-media {
+  font-size: 1.5rem;
+}
+.site-footer .social-media .social-media-link {
+  display: inline-block;
+  margin: 20px;
+}
+.site-footer .social-media .social-media-link a {
+  color: #eeb16b;
+}
+.site-footer p {
+  order: 1;
+  margin-top: 10px;
+}
+@media screen and (min-width: 800px) {
+  .site-footer p {
+    order: -1;
+  }
+}
+@media screen and (min-width: 800px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+/* Back to top Styles */
+.back-to-top {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 166, 0, 0.637);
+  color: white;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+.back-to-top:before {
+  content: ' ^ ';
+  position: relative;
+  top: 15%;
+  left: 30%;
+  font: 1.5rem 'PT Sans';
+}

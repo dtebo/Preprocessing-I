@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -54,6 +54,243 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+@nav-background: ~"linear-gradient(175deg, gray 0%, lightgray 100%)";
+@primary-color: #0077ff;
+@secondary-color: #d2f2ff;
+@header-font: ~"1.3rem 'Baloo Paaji 2'";
+@footer-background: #eaeaea;
+
+@card-font: ~"1rem 'PT Sans'";
+@card-padding: 1.5rem;
+@card-margin: 1rem;
+@card-background: #fbf7f7;
+
+@table-background: #ffffff;
+@table-header-background: darkslategray;
+
+@back-to-top-font: ~"1.5rem 'PT Sans'";
+
+.flex(@direction: row; @justify: flex-start; @align: stretch){
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+/* Header Styles */
+.site-header{
+	.flex(column);
+	font: @header-font;
+	margin-top: 20px;
+
+	h1{
+		font-size: 1.8rem;
+
+		@media screen and (min-width: 800px){
+			font-size: 1.3rem;
+		}
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.profile-info{
+		.flex(@justify: center);
+		line-height: 1.4rem;
+		margin-bottom: 2rem;
+		text-align: center;
+
+		@media screen and (min-width: 800px){
+			font-size: 1rem;
+			text-align: left;
+			margin-top: 1rem;
+		}
+	}
+
+	.site-nav{
+		height: auto;
+
+		a{
+			.flex(column);
+			background: #efefef;
+			color: rgb(231, 175, 71);
+			padding: 1rem;
+			text-align: center;
+			text-decoration: none;
+			// width: 100%;
+
+			&:hover{
+				background-color: rgb(246, 236, 228);
+			}
+
+			@media screen and (min-width: 500px){
+				background: none;
+
+				&:hover{
+					background: none;
+				}
+			}
+		}
+
+		@media screen and (min-width: 500px){
+			.flex(row, space-evenly);
+		}
+	}
+
+	@media screen and (min-width: 800px){
+		.flex(row, space-between);
+		margin: 1rem 1rem;
+	}
+}
+
+/* Primary Styles */
+.site-wrapper{
+	width: 100%;
+}
+
+/* Content Styles */
+.card{
+	padding: @card-padding;
+	background: @card-background;
+	margin: @card-margin;
+	font: @card-font;
+	
+	h2{
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	li{
+		padding: 1.4rem;
+	}
+}
+
+/* Skills Styles */
+#skills{
+	table{
+		thead{
+			background: @table-header-background;
+			color: #fff;
+			
+			tr{
+				th{
+					padding: 10px;
+				}
+				
+				text-align: left;
+			}
+		}
+
+		tbody{
+			tr{
+				&:nth-child(even){
+					background: rgb(236, 236, 236);
+				}
+	
+				&:hover{
+					background: rgb(200,200,200);
+				}
+	
+				td{
+					padding: 10px;
+				}
+			}
+		}
+
+		border-radius: 10px;
+		background-color: @table-background;
+		margin-top: 20px;
+		width: 100%;
+	}
+}
+
+/* Experience Styles */
+#experience{
+	.experience-item{
+		h3{
+			font-weight: bold;
+		}
+
+		.role-info{
+			.flex(row, space-between);
+		}
+
+		ul{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+/* Education Styles */
+#education{
+	.school-info{
+		.flex(row, space-between);
+
+		h3{
+			font-weight: bold;
+		}
+	}
+}
+
+/* Achievement Styles */
+#achievements{
+	/* TODO: Add styles */
+}
+
+/* Footer Styles */
+.site-footer{
+	.flex(column, @align: center);
+	background-color: @footer-background;
+	padding: 2rem;
+	width: 100%;
+
+	.social-media{
+		font-size: 1.5rem;
+
+		.social-media-link{
+			a{
+				color: rgb(238, 177, 107);
+			}
+			
+			display: inline-block;
+			margin: 20px;
+		}
+	}
+
+	p{
+		order: 1;
+		margin-top: 10px;
+		
+		@media screen and (min-width: 800px){
+			order: -1;
+		}
+	}
+
+	@media screen and (min-width: 800px){
+		.flex(row, space-between);
+	}
+}
+
+/* Back to top Styles */
+.back-to-top{
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background-color: rgba(255, 166, 0, 0.637);
+	color: white;
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+
+	&:before{
+		content: ' ^ ';
+		position: relative;
+		top: 15%;
+		left: 30%;
+		font: @back-to-top-font;
+	}
+}
